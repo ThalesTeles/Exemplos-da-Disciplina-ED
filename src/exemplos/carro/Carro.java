@@ -1,14 +1,19 @@
-package exemplo_carro;
+package exemplos.carro;
 
 public class Carro{
     public int portas;
     public int velocidade;
+    public Motor motor;
+
+    public Carro(int portasDoConstrutor){
+
+    }
+
+    public void girar_chave(){
+        motor.dar_partida();
+    }
 
     public void acelerar(int valor) {
         velocidade += valor;
-    }
-
-    static void main(){
-        System.out.println("Estamos na classe Carro!");
     }
 }
